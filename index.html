@@ -56,7 +56,7 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:va
 .stage{position:relative;overflow:hidden;margin:0 auto;border-radius:6px;background:#53706a;box-shadow:0 0 0 1px var(--line),0 18px 40px -24px rgba(20,30,28,.6)}
 #bg,#bg>svg,#bg>img{position:absolute;inset:0;width:100%;height:100%;display:block}
 #bg>img{object-fit:cover}
-#asm{position:absolute;left:0;top:0;transform-origin:0 0;filter:drop-shadow(0 4px 6px rgba(0,0,0,.28))}
+#asm{position:absolute;left:0;top:0;transform-origin:0 0}
 #asm>svg{position:absolute;inset:0;width:100%;height:100%;display:block}
 #clip{position:absolute}
 #clip.away{overflow:hidden}
@@ -212,11 +212,28 @@ table.spec td:last-child{text-align:right;white-space:nowrap;font-variant-numeri
   <linearGradient id="gJambL" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#000" stop-opacity=".5"/><stop offset="1" stop-color="#000" stop-opacity="0"/></linearGradient>
   <linearGradient id="gJambR" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#000" stop-opacity=".35"/><stop offset="1" stop-color="#000" stop-opacity="0"/></linearGradient>
   <linearGradient id="gJambT" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity=".45"/><stop offset="1" stop-color="#000" stop-opacity="0"/></linearGradient>
-  <linearGradient id="g_sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fb0de"/><stop offset=".42" stop-color="#cfe2f1"/><stop offset=".55" stop-color="#e9eff2"/><stop offset=".56" stop-color="#8f9ba3"/><stop offset="1" stop-color="#6d7880"/></linearGradient>
-  <linearGradient id="g_frost" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8e979b"/><stop offset="1" stop-color="#6f777b"/></linearGradient>
+  <linearGradient id="g_sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#78a9d8"/><stop offset=".4" stop-color="#c7dcee"/><stop offset=".55" stop-color="#e3eaee"/><stop offset=".6" stop-color="#8f9aa1"/><stop offset="1" stop-color="#5d666c"/></linearGradient>
+  <linearGradient id="g_frost" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#99a2a6"/><stop offset="1" stop-color="#737b7f"/></linearGradient>
   <linearGradient id="g_warm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fbf1d9"/><stop offset=".55" stop-color="#ecd7a8"/><stop offset=".56" stop-color="#d9d5cc"/><stop offset="1" stop-color="#c7c4bd"/></linearGradient>
-  <linearGradient id="g_bevel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eef2f2"/><stop offset=".5" stop-color="#d3dcdd"/><stop offset="1" stop-color="#b7c3c5"/></linearGradient>
-  <linearGradient id="g_bronze" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5a4535"/><stop offset=".5" stop-color="#3a2c23"/><stop offset="1" stop-color="#6e5743"/></linearGradient>
+  <linearGradient id="g_bevel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e9eeee"/><stop offset=".5" stop-color="#cbd5d6"/><stop offset="1" stop-color="#aebbbd"/></linearGradient>
+  <linearGradient id="g_bronze" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5a4535"/><stop offset=".5" stop-color="#33271f"/><stop offset="1" stop-color="#6a5240"/></linearGradient>
+  <pattern id="frostTex" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="3" height="3" fill="#fff" opacity=".08"/><rect x="3" y="3" width="3" height="3" fill="#000" opacity=".05"/></pattern>
+  <linearGradient id="bvT" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".3"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <linearGradient id="bvB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".24"/></linearGradient>
+  <linearGradient id="bvL" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity=".2"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <linearGradient id="bvR" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".22"/></linearGradient>
+  <radialGradient id="lightR" cx=".25" cy=".12" r="1.15"><stop offset="0" stop-color="#fff" stop-opacity=".16"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></radialGradient>
+  <linearGradient id="aoT" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset="1" stop-color="#000" stop-opacity="0"/></linearGradient>
+  <linearGradient id="aoB" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#000" stop-opacity=".2"/><stop offset="1" stop-color="#000" stop-opacity="0"/></linearGradient>
+  <linearGradient id="aoL" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#000" stop-opacity=".18"/><stop offset="1" stop-color="#000" stop-opacity="0"/></linearGradient>
+  <linearGradient id="aoR" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#000" stop-opacity=".22"/><stop offset="1" stop-color="#000" stop-opacity="0"/></linearGradient>
+  <filter id="ds" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="3" dy="6" stdDeviation="5" flood-color="#000" flood-opacity=".3"/></filter>
+  <filter id="dsS" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000" flood-opacity=".35"/></filter>
+  <filter id="dsC" x="-15%" y="-15%" width="130%" height="130%"><feDropShadow dx="5" dy="9" stdDeviation="8" flood-color="#000" flood-opacity=".32"/></filter>
+  <filter id="ins" x="-5%" y="-5%" width="110%" height="110%"><feFlood flood-color="#000" result="f"/><feComposite in="f" in2="SourceAlpha" operator="out" result="inv"/><feOffset in="inv" dx="5" dy="8" result="o"/><feGaussianBlur in="o" stdDeviation="7" result="b"/><feComposite in="b" in2="SourceAlpha" operator="in" result="sh"/><feComponentTransfer in="sh"><feFuncA type="linear" slope=".55"/></feComponentTransfer></filter>
+  <filter id="gb" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="14"/></filter>
+  <filter id="hsh" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="5"/></filter>
+  <filter id="hsh2" x="-60%" y="-30%" width="220%" height="160%"><feDropShadow dx="3" dy="4" stdDeviation="3" flood-color="#000" flood-opacity=".35"/></filter>
   <filter id="grain" filterUnits="userSpaceOnUse" x="-3000" y="-3000" width="9000" height="9000">
     <feTurbulence type="fractalNoise" baseFrequency="0.09 0.0035" numOctaves="3" seed="7" result="n"/>
     <feColorMatrix in="n" type="matrix" values="0 0 0 0 .28  0 0 0 0 .15  0 0 0 0 .05  1.9 0 0 0 -.62" result="c"/>
@@ -382,9 +399,16 @@ function shade(h,a){const f=v=>Math.round(a>=0?v+(255-v)*a:v*(1+a));return'#'+he
 function poly(col,p){return`<polygon points="${p.map(n1).join(' ')}" fill="${col}" stroke="${col}" stroke-width=".6"/>`}
 function frameRect(x,y,w,h,t,c,dir=1,k=1){
   if(w<=2*t||h<=2*t) return '';
-  const a=dir*k;
-  return poly(shade(c,.13*a),[x,y,x+w,y,x+w-t,y+t,x+t,y+t])+poly(shade(c,-.15*a),[x,y+h,x+w,y+h,x+w-t,y+h-t,x+t,y+h-t])
-    +poly(shade(c,.06*a),[x,y,x+t,y+t,x+t,y+h-t,x,y+h])+poly(shade(c,-.08*a),[x+w,y,x+w-t,y+t,x+w-t,y+h-t,x+w,y+h]);
+  const a=dir*k,inv=dir<0;
+  const T=[x,y,x+w,y,x+w-t,y+t,x+t,y+t],B=[x,y+h,x+w,y+h,x+w-t,y+h-t,x+t,y+h-t],Lf=[x,y,x+t,y+t,x+t,y+h-t,x,y+h],Rt=[x+w,y,x+w-t,y+t,x+w-t,y+h-t,x+w,y+h];
+  const ov=(p,id)=>`<polygon points="${p.map(n1).join(' ')}" fill="url(#${id})"/>`;
+  let s=poly(shade(c,.13*a),T)+poly(shade(c,-.15*a),B)+poly(shade(c,.06*a),Lf)+poly(shade(c,-.08*a),Rt);
+  s+=inv?ov(T,'bvB')+ov(B,'bvT')+ov(Lf,'bvR')+ov(Rt,'bvL'):ov(T,'bvT')+ov(B,'bvB')+ov(Lf,'bvL')+ov(Rt,'bvR');
+  s+=`<path d="M${n1(x)},${n1(y+h)}V${n1(y)}H${n1(x+w)}" fill="none" stroke="#fff" stroke-opacity="${inv?.1:.45}" stroke-width="1.5"/>`;
+  s+=`<path d="M${n1(x+w)},${n1(y)}V${n1(y+h)}H${n1(x)}" fill="none" stroke="#000" stroke-opacity="${inv?.08:.22}" stroke-width="1.2"/>`;
+  s+=`<path d="M${n1(x+t)},${n1(y+h-t)}H${n1(x+w-t)}V${n1(y+t)}" fill="none" stroke="#fff" stroke-opacity="${inv?.4:.12}" stroke-width="1.2"/>`;
+  s+=`<path d="M${n1(x)},${n1(y)}L${n1(x+t)},${n1(y+t)}M${n1(x+w)},${n1(y)}L${n1(x+w-t)},${n1(y+t)}M${n1(x)},${n1(y+h)}L${n1(x+t)},${n1(y+h-t)}M${n1(x+w)},${n1(y+h)}L${n1(x+w-t)},${n1(y+h-t)}" stroke="#000" stroke-opacity=".14" stroke-width=".9"/>`;
+  return s;
 }
 function groove(x,y,w,h,c,P){
   if(w<=0||h<=0) return '';
@@ -395,21 +419,40 @@ function rectPanel(x,y,w,h,c,st,P){
   if(st==='lines') return frameRect(x,y,w,h,12,c,1)+groove(x+22,y+22,w-44,h-44,c,P)+frameRect(x+34,y+34,w-68,h-68,9,c,1)+groove(x+58,y+58,w-116,h-116,c,P);
   return frameRect(x,y,w,h,22,c,1)+frameRect(x+22,y+22,w-44,h-44,7,c,-1)+frameRect(x+29,y+29,w-58,h-58,34,c,1,.75)+pline(x+22,y+22,w-44,h-44,P);
 }
+let GU=0;
+function glassFill(x,y,w,h,glass){
+  const id='gc'+(++GU),R=(xx,yy,ww,hh,f,o='')=>`<rect x="${n1(xx)}" y="${n1(yy)}" width="${n1(ww)}" height="${n1(hh)}" fill="${f}" ${o}/>`;
+  let s=`<clipPath id="${id}"><rect x="${n1(x)}" y="${n1(y)}" width="${n1(w)}" height="${n1(h)}"/></clipPath><g clip-path="url(#${id})">`+R(x,y,w,h,`url(#g_${glass})`);
+  if(glass==='sky'){
+    s+=`<g filter="url(#gb)" opacity=".9">`+R(x+w*.52,y+h*.47,w*.6,h*.18,'#a3abb0')+`<path d="M${n1(x+w*.45)},${n1(y+h*.47)}L${n1(x+w*.8)},${n1(y+h*.35)}L${n1(x+w*1.15)},${n1(y+h*.47)}Z" fill="#7b675e"/>`
+      +`<circle cx="${n1(x+w*.12)}" cy="${n1(y+h*.5)}" r="${n1(Math.max(w*.38,60))}" fill="#56704f"/><circle cx="${n1(x+w*.38)}" cy="${n1(y+h*.56)}" r="${n1(Math.max(w*.24,40))}" fill="#6c8461"/>`
+      +R(x,y+h*.62,w,h*.38,'#5f676d')+`</g>`;
+  } else if(glass==='bronze'){
+    s+=`<ellipse cx="${n1(x+w*.65)}" cy="${n1(y+h*.3)}" rx="${n1(w*.5)}" ry="${n1(h*.35)}" fill="#e8b979" opacity=".22" filter="url(#gb)"/>`;
+  } else {
+    s+=`<ellipse cx="${n1(x+w*.62)}" cy="${n1(y+h*.28)}" rx="${n1(w*.55)}" ry="${n1(h*.22)}" fill="#fff" opacity="${glass==='frost'?.3:.4}" filter="url(#gb)"/>`;
+    if(glass==='frost') s+=R(x,y,w,h,'url(#frostTex)','opacity=".5"');
+  }
+  s+=`<path d="M${n1(x+w*.02)},${n1(y+h)}L${n1(x+w*.5)},${n1(y)}L${n1(x+w*.72)},${n1(y)}L${n1(x+w*.24)},${n1(y+h)}Z" fill="#fff" opacity=".14"/><path d="M${n1(x+w*.3)},${n1(y+h)}L${n1(x+w*.78)},${n1(y)}L${n1(x+w*.83)},${n1(y)}L${n1(x+w*.35)},${n1(y+h)}Z" fill="#fff" opacity=".12"/></g>`;
+  if(glass==='sky') s+=`<rect x="${n1(x+9)}" y="${n1(y+9)}" width="${n1(w-18)}" height="${n1(h-18)}" fill="none" stroke="#34373c" stroke-opacity=".6" stroke-width="5"/>`;
+  return s;
+}
 function glassBox(x,y,w,h,gc,gr,glass,bar,bw){
-  let s=`<rect x="${n1(x)}" y="${n1(y)}" width="${n1(w)}" height="${n1(h)}" fill="url(#g_${glass})"/>`
-   +`<path d="M${n1(x+w*.05)},${n1(y+h)}L${n1(x+w*.55)},${n1(y)}L${n1(x+w*.75)},${n1(y)}L${n1(x+w*.25)},${n1(y+h)}Z" fill="#fff" opacity=".13"/>`;
-  if(glass==='bevel'){const cw=w/gc,ch=h/gr;for(let i=0;i<gc;i++)for(let j=0;j<gr;j++)s+=`<rect x="${n1(x+i*cw+bw/2+10)}" y="${n1(y+j*ch+bw/2+10)}" width="${n1(cw-bw-20)}" height="${n1(ch-bw-20)}" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="2.5"/>`}
-  for(let i=1;i<gc;i++){const bx=x+w*i/gc-bw/2;s+=`<rect x="${n1(bx)}" y="${n1(y)}" width="${bw}" height="${n1(h)}" fill="${bar}"/><rect x="${n1(bx)}" y="${n1(y)}" width="2" height="${n1(h)}" fill="#fff" opacity=".3"/>`}
-  for(let j=1;j<gr;j++){const by=y+h*j/gr-bw/2;s+=`<rect x="${n1(x)}" y="${n1(by)}" width="${n1(w)}" height="${bw}" fill="${bar}"/><rect x="${n1(x)}" y="${n1(by)}" width="${n1(w)}" height="2" fill="#fff" opacity=".3"/>`}
-  return s+`<rect x="${n1(x)}" y="${n1(y)}" width="${n1(w)}" height="${n1(h)}" fill="none" stroke="#000" stroke-opacity=".3" stroke-width="2"/>`;
+  let s=glassFill(x,y,w,h,glass);
+  if(glass==='bevel'){const cw=w/gc,ch=h/gr;for(let i=0;i<gc;i++)for(let j=0;j<gr;j++)s+=`<rect x="${n1(x+i*cw+bw/2+10)}" y="${n1(y+j*ch+bw/2+10)}" width="${n1(cw-bw-20)}" height="${n1(ch-bw-20)}" fill="none" stroke="#fff" stroke-opacity=".65" stroke-width="2.5"/><rect x="${n1(x+i*cw+bw/2+13)}" y="${n1(y+j*ch+bw/2+13)}" width="${n1(cw-bw-26)}" height="${n1(ch-bw-26)}" fill="none" stroke="#000" stroke-opacity=".12" stroke-width="1.5"/>`}
+  let bars='';
+  for(let i=1;i<gc;i++){const bx=x+w*i/gc-bw/2;bars+=`<rect x="${n1(bx)}" y="${n1(y)}" width="${bw}" height="${n1(h)}" fill="${bar}"/><rect x="${n1(bx)}" y="${n1(y)}" width="2" height="${n1(h)}" fill="#fff" opacity=".35"/><rect x="${n1(bx+bw-2)}" y="${n1(y)}" width="2" height="${n1(h)}" fill="#000" opacity=".25"/>`}
+  for(let j=1;j<gr;j++){const by=y+h*j/gr-bw/2;bars+=`<rect x="${n1(x)}" y="${n1(by)}" width="${n1(w)}" height="${bw}" fill="${bar}"/><rect x="${n1(x)}" y="${n1(by)}" width="${n1(w)}" height="2" fill="#fff" opacity=".35"/><rect x="${n1(x)}" y="${n1(by+bw-2)}" width="${n1(w)}" height="2" fill="#000" opacity=".25"/>`}
+  if(bars) s+=`<g filter="url(#dsS)">${bars}</g>`;
+  return s+`<rect x="${n1(x)}" y="${n1(y)}" width="${n1(w)}" height="${n1(h)}" fill="#000" filter="url(#ins)"/><rect x="${n1(x)}" y="${n1(y)}" width="${n1(w)}" height="${n1(h)}" fill="none" stroke="#000" stroke-opacity=".35" stroke-width="2"/>`;
 }
 function forgedGlass(x,y,w,h){
   const cx=x+w/2,d=Math.min(w*.3,60);
-  let s=`<rect x="${n1(x)}" y="${n1(y)}" width="${n1(w)}" height="${n1(h)}" fill="url(#g_sky)"/><g fill="none" stroke="#2a2d33" stroke-width="7" stroke-linejoin="round">`;
+  let s=glassFill(x,y,w,h,'sky')+`<g filter="url(#dsS)" fill="none" stroke="#2a2d33" stroke-width="7" stroke-linejoin="round">`;
   s+=`<path d="M${n1(cx)},${n1(y)}V${n1(y+h)}M${n1(x+w*.16)},${n1(y)}V${n1(y+h)}M${n1(x+w*.84)},${n1(y)}V${n1(y+h)}"/>`;
   for(const k of [.2,.5,.8]){const yy=y+h*k;s+=`<path d="M${n1(cx)},${n1(yy-d*1.6)}L${n1(cx+d)},${n1(yy)}L${n1(cx)},${n1(yy+d*1.6)}L${n1(cx-d)},${n1(yy)}Z"/><path d="M${n1(cx)},${n1(yy-d*.8)}L${n1(cx+d*.5)},${n1(yy)}L${n1(cx)},${n1(yy+d*.8)}L${n1(cx-d*.5)},${n1(yy)}Z"/><circle cx="${n1(cx)}" cy="${n1(yy)}" r="${n1(d*.16)}"/>`}
   for(const k of [.35,.65]){const yy=y+h*k;s+=`<path d="M${n1(x+w*.16)},${n1(yy)}C${n1(cx-w*.2)},${n1(yy-34)} ${n1(cx-w*.1)},${n1(yy+34)} ${n1(cx)},${n1(yy)}C${n1(cx+w*.1)},${n1(yy-34)} ${n1(cx+w*.2)},${n1(yy+34)} ${n1(x+w*.84)},${n1(yy)}"/>`}
-  return s+`</g><rect x="${n1(x)}" y="${n1(y)}" width="${n1(w)}" height="${n1(h)}" fill="none" stroke="#000" stroke-opacity=".3" stroke-width="2"/>`;
+  return s+`</g><rect x="${n1(x)}" y="${n1(y)}" width="${n1(w)}" height="${n1(h)}" fill="#000" filter="url(#ins)"/>`;
 }
 const gridBar=(cfg,c)=>cfg.grid==='gold'?'url(#h_gold)':shade(c,.04);
 
@@ -419,7 +462,7 @@ const LAYOUT={
   two(W,H,c,st,P,o){const x=W*.15,w=W-2*x,t1=o.t1||.6;return rectPanel(x,H*.06,w,H*(t1-.06),c,st,P)+rectPanel(x,H*(t1+.065),w,H*(.93-t1-.065),c,st,P)},
   grid15(W,H,c){const m=W*.13,gp=20,y0=H*.06,w=(W-2*m-gp*2)/3,h=(H*.94-y0-gp*4)/5;let s='';for(let r=0;r<5;r++)for(let k=0;k<3;k++){const x=m+k*(w+gp),y=y0+r*(h+gp);s+=frameRect(x,y,w,h,9,c,1)+frameRect(x+9,y+9,w-18,h-18,5,c,-1)+frameRect(x+14,y+14,w-28,h-28,16,c,1,.7)}return s},
   glassgrid(W,H,c,st,P,o){const gx=W*.17,gy=H*.075,gw=W-2*gx,gh=H*.85;return frameRect(gx-20,gy-20,gw+40,gh+40,20,c,1)+glassBox(gx,gy,gw,gh,o.gc||2,o.gr||4,o.glass||'warm',shade(c,.03),16)},
-  glass4(W,H,c,st,P,o){const gc=o.gc||1,mx=W*.14,y0=H*.06,y1=H*.94,gp=40,cw=(W-2*mx-gp*(gc-1))/gc,ch=(y1-y0-gp*3)/4;let s='';for(let r=0;r<4;r++)for(let k=0;k<gc;k++){const x=mx+k*(cw+gp),y=y0+r*(ch+gp);s+=frameRect(x,y,cw,ch,16,c,1)+frameRect(x+16,y+16,cw-32,ch-32,5,c,-1)+`<rect x="${n1(x+21)}" y="${n1(y+21)}" width="${n1(cw-42)}" height="${n1(ch-42)}" fill="url(#g_bronze)"/><rect x="${n1(x+cw*.36)}" y="${n1(y+ch*.12)}" width="${n1(cw*.26)}" height="${n1(ch*.76)}" fill="#fff" opacity=".1"/>`}return s},
+  glass4(W,H,c,st,P,o){const gc=o.gc||1,mx=W*.14,y0=H*.06,y1=H*.94,gp=40,cw=(W-2*mx-gp*(gc-1))/gc,ch=(y1-y0-gp*3)/4;let s='';for(let r=0;r<4;r++)for(let k=0;k<gc;k++){const x=mx+k*(cw+gp),y=y0+r*(ch+gp);s+=frameRect(x,y,cw,ch,16,c,1)+frameRect(x+16,y+16,cw-32,ch-32,5,c,-1)+glassFill(x+21,y+21,cw-42,ch-42,'bronze')+`<rect x="${n1(x+21)}" y="${n1(y+21)}" width="${n1(cw-42)}" height="${n1(ch-42)}" fill="#000" filter="url(#ins)"/>`}return s},
   english(W,H,c,st,P,o,x){
     const b=Math.max(70,Math.min(110,W*.13));
     let s=frameRect(14,14,W-28,H-28,b-14,c,1,1.2);
@@ -448,7 +491,8 @@ function handleSVG(type,fin,x,y,dir){
     if(type==='pull') return`<rect x="${x-9}" y="${y-360}" width="18" height="720" rx="9" fill="${f}"/><rect x="${x-15}" y="${y-332}" width="30" height="22" rx="4" fill="${f}"/><rect x="${x-15}" y="${y+310}" width="30" height="22" rx="4" fill="${f}"/><circle cx="${x}" cy="${y-372}" r="13" fill="${f}"/><circle cx="${x}" cy="${y+372}" r="13" fill="${f}"/>`;
     const e=x+dir*112;return`<circle cx="${x}" cy="${y}" r="31" fill="${f}"/><path d="M${x},${y-8}L${e},${y-12}L${e},${y+12}L${x},${y+8}Z" fill="${f}"/><ellipse cx="${x+dir*124}" cy="${y}" rx="20" ry="14" fill="${f}"/><circle cx="${x}" cy="${y+96}" r="23" fill="${f}"/>`;
   };
-  let s=`<g transform="translate(5 8)" opacity=".22">${shape('#000')}</g>`+shape(F);
+  let s=`<g transform="translate(4 9)" opacity=".38" filter="url(#hsh)">${shape('#000')}</g>`+shape(F);
+  if(type!=='pull') s+=`<ellipse cx="${x-8}" cy="${y-11}" rx="13" ry="8" fill="#fff" opacity=".5"/><circle cx="${x}" cy="${y}" r="${type==='slim'?18:type==='square'?24:27}" fill="none" stroke="#000" stroke-opacity=".18" stroke-width="2"/>`;
   if(type==='classic') s+=`<circle cx="${x}" cy="${y+90}" r="5" fill="#222"/><path d="M${x-3},${y+92}L${x+3},${y+92}L${x+4},${y+108}L${x-4},${y+108}Z" fill="#222"/>`;
   if(type==='entrance') s+=`<rect x="${x-3}" y="${y-222}" width="6" height="24" rx="3" fill="#222"/><rect x="${x-3}" y="${y+83}" width="6" height="24" rx="3" fill="#222"/>`;
   if(type==='pull') s+=`<rect x="${x-5}" y="${y-340}" width="2.5" height="680" fill="#fff" opacity=".55"/>`;
@@ -471,8 +515,8 @@ function leafSpecs(m,cfg){
 }
 function leafInner(m,cfg,W,H,l){
   const c=(COLORS[cfg.color]||COLORS.white).c, P=cfg.patina==='gold'?'pGold':cfg.patina==='silver'?'pSilver':null;
-  let s=`<rect width="${n1(W)}" height="${H}" fill="${c}"/>`+LAYOUT[l.lay](W,H,c,m.panel||'classic',P,l.o,{cfg,m});
-  s+=`<rect width="${n1(W)}" height="${H}" fill="url(#leafLight)"/><rect width="${n1(W)}" height="${H}" fill="url(#leafV)"/>`;
+  let s=`<rect width="${n1(W)}" height="${H}" fill="${c}"/><g filter="url(#ds)">`+LAYOUT[l.lay](W,H,c,m.panel||'classic',P,l.o,{cfg,m})+'</g>';
+  s+=`<rect width="${n1(W)}" height="${H}" fill="url(#lightR)"/><rect width="${n1(W)}" height="${H}" fill="url(#leafV)"/><rect width="${n1(W)}" height="28" fill="url(#aoT)"/><rect y="${H-34}" width="${n1(W)}" height="34" fill="url(#aoB)"/><rect width="22" height="${H}" fill="url(#aoL)"/><rect x="${n1(W-22)}" width="22" height="${H}" fill="url(#aoR)"/>`;
   s+=`<rect x="1.5" y="1.5" width="${n1(W-3)}" height="${H-3}" fill="none" stroke="${shade(c,-.4)}" stroke-opacity=".55" stroke-width="3"/>`;
   if(l.h){const pull=cfg.handle==='pull';s+=handleSVG(cfg.handle,cfg.hfin,l.side==='L'?W-72:72,pull?H-1050:H-1000,l.side==='L'?-1:1)}
   return s;
@@ -590,6 +634,7 @@ function casingInner(G,cfg,opts={}){
   let s=opts.interior?`<g transform="translate(${lx} ${n1(ly)})">${interiorSVG(W,H)}</g>`:'';
   if(!arch) s+=`<path fill-rule="evenodd" d="M${-g},${-g}H${Wt+g}V${Ht}H${-g}Z M0,0V${Ht}H${Wt}V0Z" fill="${shade(c,-.12)}"/>`;
   const st=arch?0:g;
+  s+='<g filter="url(#dsC)">';
   if(t==='frame'||t==='framecor') s+=bands(pf,st,c,B_FRAME);
   if(t==='framecor') s+=cornice(-(g+cw),Wt+g+cw,-(g+cw),c,CORN3);
   if(t==='flat') s+=bands(pf,st,c,B_FLAT);
@@ -599,9 +644,9 @@ function casingInner(G,cfg,opts={}){
   if(t==='fluted') s+=flutedCasing(Wt,Ht,g,cw,c);
   if(t==='capital') s+=capitalCasing(Wt,Ht,g,cw,c,P);
   if(t==='column') s+=columnCasing(Wt,Ht,g,cw,c,P);
-  s+=fixedSVG(G,cfg,c);
+  s+='</g><g filter="url(#ds)">'+fixedSVG(G,cfg,c)+'</g>';
   if(opts.hinges) for(const l of leafSpecs(m,cfg)){ if(!l.a) continue; const hx=lx+(l.side==='L'?l.x*W:(l.x+l.f)*W)-8;
-    for(const k of [.1,.42,.88]) s+=`<rect x="${n1(hx)}" y="${n1(ly+H*k)}" width="16" height="95" rx="6" fill="url(#h_${cfg.hfin})"/>`; }
+    for(const k of [.1,.42,.88]) s+=`<g filter="url(#hsh2)"><rect x="${n1(hx)}" y="${n1(ly+H*k)}" width="16" height="95" rx="6" fill="url(#h_${cfg.hfin})"/><rect x="${n1(hx)}" y="${n1(ly+H*k)}" width="16" height="95" rx="6" fill="url(#cyl)"/></g><rect x="${n1(hx)}" y="${n1(ly+H*k+46)}" width="16" height="2" fill="#000" opacity=".35"/><rect x="${n1(hx+3)}" y="${n1(ly+H*k-10)}" width="10" height="10" rx="4" fill="url(#h_${cfg.hfin})"/>`; }
   return s;
 }
 function assemblySVG(cfg){
@@ -686,7 +731,7 @@ function placeDoor(){
   const ox=-G.bb.x*K,oy=-G.bb.y*K,ow=G.Wt*K,oh=G.Ht*K;
   const m=homog([[ox,oy],[ox+ow,oy],[ox+ow,oy+oh],[ox,oy+oh]],state.pts.map(p=>[p[0]*sw,p[1]*sh]));
   asm.style.transform=`matrix3d(${m.map(v=>+v.toFixed(9)).join(',')})`;
-  asm.style.filter=`brightness(${state.bg==='photo'?state.bright:1}) drop-shadow(0 4px 6px rgba(0,0,0,.28))`;
+  asm.style.filter=`brightness(${state.bg==='photo'?state.bright:1}) drop-shadow(0 3px 4px rgba(0,0,0,.18))`;
   drawMarkers();
 }
 function drawMarkers(){
